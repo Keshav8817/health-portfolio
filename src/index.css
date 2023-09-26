@@ -1,0 +1,367 @@
+
+
+/* html,body , #root , .app{
+  height: 100%;
+  width:100%;
+  font-family: sans-serif;
+  color: white;
+} */
+
+.main{
+  
+  margin-top: 100px;
+  text-align: center;
+  font-weight: bold;
+}
+.main h4{
+  
+  color: blueviolet;
+}
+.box{
+  
+  display: flex;
+  padding: 50px;
+  margin-left: 40px;
+  margin-right: 40px;
+  background-color:whitesmoke;
+  
+}
+.box1{
+ 
+  padding: 20px;
+  box-shadow: 0cqb;
+  border-radius: 20px;
+  margin: 30px;
+  max-width: 50%;
+  height: 40vh;
+  background-color: white;
+}
+.main-1{
+  margin-top: 100px;
+  text-align: center;
+  font-weight: bold;
+}
+.main-1 h4{
+  color: blueviolet;
+}
+.box2{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin:50px;
+  
+}
+.main-2{
+  border: 2px solid black;
+  margin-top: 100px;
+  text-align: center;
+  font-weight: bold;
+  margin-left: 40px;
+  margin-right: 40px;
+  border-radius: 20px;
+  background-color: black;
+  color: white;
+  height: 40vh;
+}
+
+.box3{
+  display: flex;
+  margin: 50px;
+  justify-content: space-evenly;
+}
+.box3 h4{
+  color: darkgray;
+}
+/* .main-3{
+  margin: 100px;
+
+
+  justify-content: space-evenly;
+ 
+}
+.image-container {
+  flex: 1; 
+  padding: 20px; 
+}
+
+
+.image-container img {
+  max-width: 70%; 
+  height: 50vh; 
+}
+.box5{
+  display: flex;
+  margin-left: 60%;
+  max-width: 38%;
+  text-align: right;
+  justify-content: space-between;
+}
+.box5 h4{
+  color: blueviolet;
+}
+.box5 button{
+  border: 10px;
+  padding: 10px;
+  width: 40%;
+  background-color:skyblue;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  :hover{
+      background-color: blueviolet;
+  }
+  
+} */
+.main-3 {
+  display: flex;
+   /* Vertically center align items */
+  /* Create space between items */
+  /* padding: 20px; */
+  margin-top: 100px;
+  /* background-color:whitesmoke; */
+}
+
+.image-container {
+  margin-left: 100px;
+  flex: 1; /* Take up available space */
+  /* padding: 50px; */
+}
+
+.image-container img {
+  max-width: 100%;
+  height: 100%;
+}
+
+.box5 {
+  flex: 2; /* Take up twice as much space as the image-container */
+  padding: 20px;
+  text-align: right;
+  margin-right: 100px;
+  
+ justify-content: space-between;
+}
+.box5 h4{
+  color: blueviolet;
+}
+.box5 button{
+  border: 10px;
+  padding: 10px;
+  width: 20%;
+  background-color:skyblue;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  :hover{
+      background-color: blueviolet;
+  }
+}
+.main-4{
+ 
+  margin-top: 70px;
+  padding-top: 50px;
+  text-align: center;
+  background-color: rgba(255, 182, 193, 0.043);
+}
+.main-4 h4{
+  
+  color: blueviolet;
+}
+.box6{
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  /* margin-top: 40px; */
+  
+ 
+}
+.box-6{
+
+  display: flex;
+  flex: 1;
+  /* margin-left: 100px;
+  margin-right: 100px; */
+  
+  margin: 0px 50px 50px 50px;
+  border-radius: 10px;
+  border: 2px solid gray;
+  border-width: 1px;
+  justify-content: center;
+padding: 20px;
+background-color:white ;
+}
+
+.box-6-1{
+  text-align: left;
+  justify-content: space-between;
+  flex: 1;
+  font-size: smaller;
+}
+/* .box-6-1 heading{
+  text-align: center;
+  justify-content: center;
+} */
+.box-6-2{
+  text-align: right;
+  justify-content: space-around;
+  flex: 1;
+  color: gray;
+  font-size: smaller;
+}
+.main-5 {
+  text-align: center;
+padding: 30px;
+background-color: rgba(245, 245, 220, 0.096);
+  
+  
+}
+
+ 
+.box-7 {
+  
+  display: flex;
+  justify-content: space-around;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.box-7-1 {
+  flex: 1; /* Distribute available space evenly among boxes */
+  margin-right: 10px;
+  margin-left: 10px;
+  /* border: 2px solid #ccc; */
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column; /* Stack image and text vertically */
+  align-items: center;
+  justify-content: center;
+  /* background-color: #f0f0f0; */
+  padding: 20px; /* Add some padding to the boxes */
+}
+
+.box-7-1 img {
+  max-width: 100%;
+  max-height: 100%; /* Adjust max-height as needed */
+}
+
+.name {
+  display: flex;
+  text-align: center;
+  justify-content: space-evenly;
+}
+
+.box-7-1 h3 {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.box-7-1 h5 {
+  margin-top: 0px; 
+  font-size: 14px;
+  font-weight: bold;
+  color: gray;
+}
+
+.main-5 h4{
+  color: blueviolet;
+}
+
+/* .box-10{
+  background-color: antiquewhite;
+ 
+}
+
+.box-9{
+  margin-top: 50px;
+  
+  
+ 
+}
+.box-8 img{
+  height: 15px;
+} */
+/* Style for the main container */
+.box-10 {
+  background-color: #f2f2f2;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  width: 100%;
+  margin:  auto;
+  text-align: center;
+}
+
+/* Style for the Pricing Plan heading */
+.box-10 h4 {
+  font-size: 24px;
+  /* margin-bottom: 20px; */
+}
+
+/* Style for the inner container */
+.box-9 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Style for each pricing plan box */
+.box-8 {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  width: 300px;
+  text-align: left;
+}
+
+/* Style for the pricing plan title */
+.box-8 h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+/* Style for the tick image */
+.box-8 img {
+  width: 20px;
+  height: 15pxpx;
+  margin-right: 5px;
+}
+
+/* Style for the pricing plan features */
+.box-8 p {
+  margin: 5px 0;
+}
+
+/* Style for the feature text */
+.box-8 span {
+  font-size: 13px;
+}
+.button-on-right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.button-on-right button {
+  margin-top: 10px;
+  margin-left: 10px; 
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  background-color: skyblue;
+}
+/* Style for the first box */
+.box-10:nth-child(1) .box-8 {
+  border: 2px solid #FF5733; /* Change the border color as desired */
+}
+
+/* Style for the second box */
+.box-10:nth-child(2) .box-8 {
+  border: 2px solid #3498db; /* Change the border color as desired */
+}
+
+/* Style for the third box */
+.box-10:nth-child(3) .box-8 {
+  border: 2px solid #27ae60; /* Change the border color as desired */
+}

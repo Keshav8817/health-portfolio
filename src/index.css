@@ -1,142 +1,235 @@
-
-
-/* html,body , #root , .app{
-  height: 100%;
-  width:100%;
-  font-family: sans-serif;
-  color: white;
-} */
-
-.main{
-  
-  margin-top: 100px;
+.main {
+  padding: 2rem; /* Reduce padding for smaller screens */
   text-align: center;
   font-weight: bold;
-}
-.main h4{
+  background: linear-gradient(to right, #fbf1fc, #EDFBF9);
   
+}
+.main h1{
+  font-style: italic;
+  
+}
+.main h4 {
   color: blueviolet;
 }
-.box{
-  
+
+.box {
   display: flex;
-  padding: 50px;
-  margin-left: 40px;
-  margin-right: 40px;
-  background-color:whitesmoke;
+  flex-direction: row; /* Stack boxes vertically on smaller screens */
+  padding: 2rem;
+  margin: 2rem;
   
+  text-align: center;
+  color: rgb(128, 128, 128);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
-.box1{
- 
-  padding: 20px;
-  box-shadow: 0cqb;
-  border-radius: 20px;
-  margin: 30px;
-  max-width: 50%;
-  height: 40vh;
-  background-color: white;
+
+.box1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid blueviolet;
+  border-radius: 2rem;
+  margin: 2rem;
+  text-align: center;
+  color: black;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  background-color: rgba(137, 43, 226, 0.087);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+.box1 h2{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.box1:hover {
+  transform: scale(1.01); 
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  background-color: rgba(137, 43, 226, 0.32);
+  border: 2px solid blueviolet;
+}
+
+/* Style the images */
+.box1 img {
+  width: 5rem;
+  height: 5rem;
+}
+
+/* Media query for smaller screens (e.g., smartphones) */
+@media (max-width: 768px) {
+  .box {
+    margin: 1rem; /* Reduce margin for spacing on smaller screens */
+    padding: 1rem; /* Reduce padding for smaller screens */
+    flex-direction: column;
+  }
+
+  .box1 {
+    margin: 1rem; /* Reduce margin for spacing on smaller screens */
+    padding: 1rem; /* Reduce padding for smaller screens */
+  }
+
+  .box1:hover {
+    transform: none; /* Remove the scale transform on hover for smaller screens */
+    box-shadow: none; /* Remove the box shadow on hover for smaller screens */
+    background-color: white; /* Keep the background color white on hover for smaller screens */
+    border: none; /* Remove the border on hover for smaller screens */
+  }
+}
+
+
+
+
+
+
+
 .main-1{
-  margin-top: 100px;
+  
+  padding: 1rem;
+  
   text-align: center;
   font-weight: bold;
+  background: linear-gradient(to right, #EDFBF9, #fbf1fc);
+
 }
 .main-1 h4{
   color: blueviolet;
 }
+.main-1 h1{
+font-style: italic;
+}
 .box2{
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  margin:50px;
-  
-}
-.main-2{
-  border: 2px solid black;
-  margin-top: 100px;
-  text-align: center;
-  font-weight: bold;
-  margin-left: 40px;
-  margin-right: 40px;
-  border-radius: 20px;
-  background-color: black;
-  color: white;
-  height: 40vh;
-}
-
-.box3{
-  display: flex;
-  margin: 50px;
-  justify-content: space-evenly;
-}
-.box3 h4{
-  color: darkgray;
-}
-/* .main-3{
-  margin: 100px;
-
-
   justify-content: space-evenly;
  
-}
-.image-container {
-  flex: 1; 
-  padding: 20px; 
-}
+  padding-top: 1rem;
+  padding-bottom:3rem;
 
-
-.image-container img {
-  max-width: 70%; 
-  height: 50vh; 
 }
-.box5{
-  display: flex;
-  margin-left: 60%;
-  max-width: 38%;
-  text-align: right;
-  justify-content: space-between;
-}
-.box5 h4{
-  color: blueviolet;
-}
-.box5 button{
-  border: 10px;
-  padding: 10px;
-  width: 40%;
-  background-color:skyblue;
-  color: white;
-  border-radius: 10px;
-  cursor: pointer;
-  :hover{
-      background-color: blueviolet;
-  }
+.box2 img{
   
-} */
-.main-3 {
+  width: 2rem;
+  height: 2rem;
+}
+.box-21{
+  padding: 3rem;
+}
+
+
+/* Media query for smaller screens (e.g., smartphones) */
+@media (max-width: 768px) {
+  .box2 {
+    padding-top: 1rem; /* Further reduce top padding for smaller screens */
+    padding-bottom: 1rem; /* Further reduce bottom padding for smaller screens */
+  }
+
+  .box2 img {
+    width: 1.5rem; /* Reduce the size of images on smaller screens */
+    height: 1.5rem; /* Reduce the size of images on smaller screens */
+    margin: 0.2rem; /* Reduce margin for spacing on smaller screens */
+  }
+}
+
+
+/* --------------------------------------------------------- */
+
+
+
+
+
+
+.main-2 {
+  border: 2px solid black;
+  text-align: center;
+  font-weight: bold;
+  margin-left: 2rem; /* Reduce left margin for smaller screens */
+  margin-right: 2rem; /* Reduce right margin for smaller screens */
+  border-radius: 2rem;
+  background-color: black;
+  color: white;
+  padding: 2rem; /* Increase padding for better spacing on smaller screens */
+  height: auto; /* Remove fixed height to adapt to content on smaller screens */
+}
+
+.image__1 {
+  width: 5rem;
+  height: 5rem;
+}
+
+.box3 {
   display: flex;
-   /* Vertically center align items */
-  /* Create space between items */
-  /* padding: 20px; */
-  margin-top: 100px;
-  /* background-color:whitesmoke; */
+  flex-direction: row; /* Stack items vertically on smaller screens */
+  align-items: center; /* Center items vertically */
+  justify-content: space-evenly;
+  padding: 1rem; /* Reduce padding for better spacing on smaller screens */
 }
 
-.image-container {
-  margin-left: 100px;
-  flex: 1; /* Take up available space */
-  /* padding: 50px; */
+.box3 h4 {
+  color: darkgray;
+}
+.box4 h1{
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.box4 h4{
+  font-size: 15px;
+  color: white;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+/* Media query for smaller screens (e.g., smartphones) */
+@media (max-width: 768px) {
+  .main-2 {
+    margin-left: 1rem; /* Further reduce left margin for smaller screens */
+    margin-right: 1rem; /* Further reduce right margin for smaller screens */
+    padding: 1rem; /* Further reduce padding for better spacing on smaller screens */
+  }
+
+  .box3 {
+    padding: 0.5rem; /* Further reduce padding for better spacing on smaller screens */
+  }
+
+  .image__1 {
+    width: 4rem; /* Reduce image size on smaller screens */
+    height: 4rem; /* Reduce image size on smaller screens */
+  }
 }
 
-.image-container img {
-  max-width: 100%;
+
+
+/* ---------------------------------------------------------------- */
+
+
+
+
+/* .main-3 {
+  display: flex;
+   
+ padding: 5rem;
+ 
+
+  background: linear-gradient(to right, #fbf1fc, #EDFBF9);
+  
+}
+
+.image-container10 {
+  margin-left: 2rem;
+  flex: 1; 
+ 
+}
+
+.image-container10 img {
+ 
+  width: 130%;
   height: 100%;
 }
 
 .box5 {
-  flex: 2; /* Take up twice as much space as the image-container */
-  padding: 20px;
+  flex: 2; 
+  padding: 2rem;
   text-align: right;
-  margin-right: 100px;
+  margin-right: 2rem;
   
  justify-content: space-between;
 }
@@ -145,32 +238,158 @@
 }
 .box5 button{
   border: 10px;
-  padding: 10px;
+  padding: 1rem;
   width: 20%;
   background-color:skyblue;
   color: white;
-  border-radius: 10px;
+  border-radius: 1rem;
   cursor: pointer;
-  :hover{
-      background-color: blueviolet;
+  transition: background-color 0.3s ease;
+}
+.box5 button:hover {
+  background-color: purple;
+  transform: scale(1.1); 
+  
+  
+} */
+
+
+.main-3 {
+  display: flex;
+  flex-direction: row; /* Stack items vertically on smaller screens */
+  align-items: center; /* Center items horizontally on smaller screens */
+  padding: 2rem; /* Reduce padding for better spacing on smaller screens */
+  background: linear-gradient(to right, #fbf1fc, #EDFBF9);
+  text-align: center; /* Center-align text on smaller screens */
+}
+
+.image-container10 {
+  margin: 3rem; /* Remove margin for better spacing on smaller screens */
+  flex: 1;
+  width: 100%; /* Set image width to 100% for responsiveness */
+}
+
+.image-container10 img {
+  width: 100%; /* Ensure the image scales to fit its container */
+  height: auto; /* Allow the image to maintain its aspect ratio */
+}
+
+.box5 {
+  flex: 1; /* Adjust flex ratio for better spacing on smaller screens */
+  padding: 1rem; /* Reduce padding for better spacing on smaller screens */
+  text-align: right; /* Center-align text on smaller screens */
+  margin: 3rem; /* Add margin for better spacing on smaller screens */
+}
+
+.box5 h4 {
+  color: blueviolet;
+  font-weight: bold;
+}
+.box5 h5{
+  color: gray;
+}
+.box5 h1{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 35px;
+}
+
+.box5 button {
+  border: none; /* Remove border for better styling on smaller screens */
+  padding: 1rem ;/* Adjust button padding for better spacing on smaller screens */
+  width: 30%; /* Adjust button width for better spacing on smaller screens */
+  background-color: skyblue;
+  color: white;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 1rem; /* Add margin for better spacing on smaller screens */
+}
+
+.box5 button:hover {
+  background-color: purple;
+  transform: scale(1.1);
+}
+
+/* Media query for smaller screens (e.g., smartphones) */
+@media (max-width: 768px) {
+
+  .main-3{
+    flex-direction: column;
+    margin: 0px;
+  }
+  .box5 {
+   
+    text-align: right; /* Center-align text on smaller screens */
+   
+  }
+  
+  .box5 h1 {
+    font-size: 1.5rem; /* Reduce font size for better readability on smaller screens */
+    text-align: center;
+    
+  }
+  .box5 h4 {
+    color: blueviolet;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .box5 h5 {
+    font-size: 1rem; /* Reduce font size for better readability on smaller screens */
+    text-align: center;
+  }
+
+  .box5 h3 {
+    font-size: 1rem; /* Reduce font size for better readability on smaller screens */
+    text-align: center;
+  }
+
+  .box5 button {
+    width: 80%; /* Further adjust button width for better spacing on smaller screens */
+    text-align: center;
+  }
+  .image-container10 img {
+    width: 100%; /* Ensure the image scales to fit its container */
+    height: auto; /* Allow the image to maintain its aspect ratio */
   }
 }
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------------------------------------- */
+
+
+
+
+
+
 .main-4{
- 
-  margin-top: 70px;
-  padding-top: 50px;
+  padding-top: 5rem;
+  /* margin-top: 70px; */
+  /* padding-top: 50px; */
   text-align: center;
-  background-color: rgba(255, 182, 193, 0.043);
+  background: linear-gradient(to right, #EDFBF9, #fbf1fc);
+  border: 1px solid #ccc;
 }
 .main-4 h4{
   
   color: blueviolet;
 }
+.main-4 h1{
+  font-style: italic;
+}
 .box6{
   text-align: center;
-  justify-content: center;
+  justify-content: space-evenly;
   display: flex;
-  /* margin-top: 40px; */
+ 
   
  
 }
@@ -178,56 +397,93 @@
 
   display: flex;
   flex: 1;
-  /* margin-left: 100px;
-  margin-right: 100px; */
   
-  margin: 0px 50px 50px 50px;
-  border-radius: 10px;
+  margin: 0px 100px 100px 100px;
+  border-radius: 1rem;
   border: 2px solid gray;
   border-width: 1px;
   justify-content: center;
-padding: 20px;
+padding: 10px;
 background-color:white ;
+flex-direction: row;
+transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
-
+.box-6:hover {
+  transform: scale(1.05); /* Increase the size of the box on hover */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  background-color: rgba(137, 43, 226, 0.32);
+  border: 2px solid rgba(137, 43, 226, 0.409);
+}
 .box-6-1{
   text-align: left;
   justify-content: space-between;
   flex: 1;
   font-size: smaller;
+  flex-direction: column;
 }
-/* .box-6-1 heading{
-  text-align: center;
-  justify-content: center;
-} */
+
 .box-6-2{
   text-align: right;
   justify-content: space-around;
   flex: 1;
   color: gray;
   font-size: smaller;
+  flex-direction: column;
 }
+
+
+
+
+/* Add media query for smaller screens */
+@media (max-width: 768px) {
+  .box6 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .box-6 {
+    margin: 20px 0; 
+  }
+
+  .box-6-1,
+  .box-6-2 {
+    text-align: center; 
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+
+
+/* --------------------------------------------------------------------- */
+
+
 .main-5 {
   text-align: center;
-padding: 30px;
-background-color: rgba(245, 245, 220, 0.096);
+  padding-top: 5rem;
+background: linear-gradient(to right, #fbf1fc, #EDFBF9);
   
   
 }
 
- 
+.main-5 h1{
+  font-style: italic;
+}
 .box-7 {
   
   display: flex;
   justify-content: space-around;
-  margin-left: 100px;
-  margin-right: 100px;
+  margin-left: 10rem;
+  margin-right: 10rem;
+  /* background-color: #3498db0e; */
+  position: relative;
+  flex-direction: row;
 }
 
 .box-7-1 {
-  flex: 1; /* Distribute available space evenly among boxes */
-  margin-right: 10px;
-  margin-left: 10px;
+  /* flex: 1;  */
+  /* margin-right: 10px;
+  margin-left: 10px; */
   /* border: 2px solid #ccc; */
   border-radius: 10px;
   display: flex;
@@ -235,64 +491,80 @@ background-color: rgba(245, 245, 220, 0.096);
   align-items: center;
   justify-content: center;
   /* background-color: #f0f0f0; */
-  padding: 20px; /* Add some padding to the boxes */
+  padding: .1rem; /* Add some padding to the boxes */
+  position: relative;
 }
 
 .box-7-1 img {
-  max-width: 100%;
-  max-height: 100%; /* Adjust max-height as needed */
+  /* width: 100%;
+  height: 100%; */
+  border: 2px solid black;
+  width: 20rem;
+  height: 15rem;
+ 
+ 
+  
 }
 
 .name {
   display: flex;
   text-align: center;
   justify-content: space-evenly;
+  
 }
 
 .box-7-1 h3 {
   margin-top: 10px;
-  font-size: 16px;
+  font-size: 17px;
   font-weight: bold;
 }
 .box-7-1 h5 {
   margin-top: 0px; 
-  font-size: 14px;
+  font-size: 16px;
   font-weight: bold;
   color: gray;
 }
 
+
+
+
+
 .main-5 h4{
   color: blueviolet;
 }
+@media (max-width: 768px) {
+  .box-7{
+    flex-direction: column;
+  }
+  .box-7-1 img {
+    width: 100%;
+    height: 100%;
+  }
 
-/* .box-10{
-  background-color: antiquewhite;
- 
 }
 
-.box-9{
-  margin-top: 50px;
-  
-  
- 
-}
-.box-8 img{
-  height: 15px;
-} */
-/* Style for the main container */
+
+/* ------------------------------------------------------------- */
+
+
+
 .box-10 {
   background-color: #f2f2f2;
-  padding: 20px;
+  padding-top: 50px;
   border: 1px solid #ccc;
   border-radius: 10px;
   width: 100%;
-  margin:  auto;
+  background: linear-gradient(to right, #EDFBF9, #fbf1fc);
   text-align: center;
 }
 
 /* Style for the Pricing Plan heading */
 .box-10 h4 {
   font-size: 24px;
+  /* margin-bottom: 20px; */
+}
+.box-10 h1 {
+  font-style: italic;
   /* margin-bottom: 20px; */
 }
 
@@ -304,38 +576,7 @@ background-color: rgba(245, 245, 220, 0.096);
 }
 
 /* Style for each pricing plan box */
-.box-8 {
-  background-color: #fff;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  padding: 20px;
-  margin: 10px;
-  width: 300px;
-  text-align: left;
-}
 
-/* Style for the pricing plan title */
-.box-8 h2 {
-  font-size: 20px;
-  margin-bottom: 10px;
-}
-
-/* Style for the tick image */
-.box-8 img {
-  width: 20px;
-  height: 15pxpx;
-  margin-right: 5px;
-}
-
-/* Style for the pricing plan features */
-.box-8 p {
-  margin: 5px 0;
-}
-
-/* Style for the feature text */
-.box-8 span {
-  font-size: 13px;
-}
 .button-on-right {
   display: flex;
   justify-content: space-between;
@@ -351,17 +592,462 @@ background-color: rgba(245, 245, 220, 0.096);
   color: white;
   background-color: skyblue;
 }
-/* Style for the first box */
-.box-10:nth-child(1) .box-8 {
-  border: 2px solid #FF5733; /* Change the border color as desired */
+
+.box-font{
+  text-align: right;
+  font-size: 13px;
+  color: black;
 }
 
-/* Style for the second box */
-.box-10:nth-child(2) .box-8 {
-  border: 2px solid #3498db; /* Change the border color as desired */
+
+
+/* CSS */
+.box-10 {
+  text-align: center;
+  /* margin: 20px; */
+  padding-bottom: 100px;
+  background-color:rgba(255, 192, 203, 0.048)
 }
 
-/* Style for the third box */
-.box-10:nth-child(3) .box-8 {
-  border: 2px solid #27ae60; /* Change the border color as desired */
+.box-9 {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
+
+.box-8 {
+  border-radius: 20px;
+  /* padding: 20px; */
+  text-align: left;
+  transition: background-color 0.3s ease;
+  max-width: 250px;
+  background-color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* Add the hover effect for background color */
+.box-8:hover {
+  background-color: var(--hover-bg-color);
+}
+
+.text-white {
+  color: black; /* Default text color */
+}
+
+/* Add text color change for title when hovering */
+.box-8:hover .text-white {
+  color: white;
+}
+
+/* Style the pricing plan title */
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+/* Style the tick icon */
+img {
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+/* Style the pricing details */
+p {
+  font-size: 13px;
+  margin: 8px 0;
+  color: gray;
+}
+
+/* Style the button */
+.button-on-right {
+  margin-top: 20px;
+}
+
+/* Style the additional text */
+.box-font {
+  font-size: 14px;
+  color: gray;
+}
+
+/* Add custom properties for background and border colors */
+:root {
+  --hover-bg-color: lightblue;
+  /* Default hover background color */
+}
+
+/* Define custom hover background colors for each pricing plan */
+.box-8-hover-intro:hover {
+  --hover-bg-color: skyblue;
+  color: white;
+}
+
+.box-8-hover-base:hover {
+  --hover-bg-color: black;
+  color: white;
+}
+
+.box-8-hover-pro:hover {
+  --hover-bg-color: rgba(137, 43, 226, 0.616);
+  color: white;
+}
+
+/* Style the button */
+button {
+  background-color: var(--hover-bg-color); /* Button background color based on hover */
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Adjust the button on hover */
+button:hover {
+  background-color: #3498db; /* Change to the desired hover color */
+}
+/* CSS */
+.box-8:hover * {
+  color: white;
+  transform: scale(1.0);  /* Change the text color to white for all elements inside the box when hovering */
+}
+.box-10 h3{
+  color:blueviolet;
+}
+
+
+
+
+/* 
+.main-7{
+  background-color: black;
+  margin-top: 100px;
+  
+} */
+/* .box-11{
+  padding: 50px 300px 50px 150px  ;
+  
+ 
+  
+} */
+/* .box-11 h4{
+  color: skyblue;
+  font-weight: bold;
+}
+.box-11 h1{
+  color: white;
+  font-weight: bold;
+} */
+/* .box-12{
+  margin: 70px;
+  width: 100%;
+  background-color: #3498db;
+}
+.box-12 img{
+width: 100px;
+height: 80px;
+
+justify-content: space-between;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.box-11 h4{
+  color: skyblue;
+  font-weight: bold;
+}
+.box-11 h1{
+  color: white;
+  font-weight: bold;
+  
+} 
+
+
+.main-7 {
+  /* margin-top: 100px; */
+  /* padding: 50px; */
+  display: flex;
+  align-items: center;
+  background-color: black;
+  padding: 5rem;
+  flex-direction: row;
+}
+
+.box-11 {
+  flex: 2; 
+  /* padding: 5rem 0rem 10rem 15rem ;  */
+  padding: .1rem;
+  
+}
+
+.right-image1 {
+  flex: 1; 
+  text-align: left; 
+  margin-top: 5rem;
+  
+  
+}
+.right-image1 img{
+  
+width: 50%;
+height: 50%;
+border-radius: 100px;
+}
+.box-12 {
+  display: flex;
+  align-items: center;
+  
+  padding-left: 10rem;
+  padding-right: 7rem;
+}
+
+.left-image1 {
+  flex: 1; 
+  text-align: left;
+  margin-right: 2rem;
+}
+.left-image1 img{
+  width: 5rem;
+  height: auto;
+}
+.right-images3 {
+ 
+  flex: 1;
+  text-align: right;
+}
+
+.right-images3 img {
+  width: 3rem;
+  
+  height: 3rem;
+  
+}
+
+.left-content1 h5 {
+ 
+  text-align: left; 
+  margin-top: auto; 
+  color: aliceblue;
+  justify-content: space-between;
+  padding-left: 10rem;
+  padding-right: 10rem;
+}
+
+.left-content1 h3{
+  margin: 0;
+    text-align: left; 
+    margin-top: auto;
+    color: aliceblue;
+    justify-content: left;
+    padding-left: 10rem;
+    padding-right: 20rem;
+    color: skyblue; ;
+  } 
+
+
+  @media (max-width: 768px) {
+    .main-7{
+      flex-direction: column;
+      text-align: center;
+      font-size: 2rem;
+    }
+  .right-image1{
+    text-align: center;
+    height: 100%;
+    width: 100%;
+  }
+
+  .box-11 h4{
+    color: skyblue;
+    font-weight: bold;
+  }
+  .box-11 h1{
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-size: 20px;
+  } 
+  }
+  
+
+  /* --------------------------------------------------------------------------------- */
+
+
+.main-container{
+  background: linear-gradient(to right, #fbf1fc, #EDFBF9);
+}
+.main-container-2{
+ 
+  padding: 5rem;
+  display: flex;
+
+}
+
+  .image-1-container{
+    flex: 1;
+    align-items: flex-start;
+   
+    
+  }
+  .image-1-container img{
+    width: 70%;
+    height: 50%;
+   
+  }
+  .image-1-container h4{
+    color: rgb(135, 170, 235);
+    font: bold;
+   margin-top: auto;
+   font-size: 20px;
+  }
+  .image-1-container h1{
+    font: bold;
+    margin:auto ;
+    font-size: 40px;
+  }
+  .form-container{
+    flex: .1;
+   
+    justify-content: space-between;
+    border: 1px solid white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.192);
+   /* background-color: rgba(135, 207, 235, 0.068); */
+   background-image: url('C:\Projects\ReactApp\health-portfolio\public\assets\back-form.webp'); 
+   background-repeat: no-repeat;
+    border-radius: 20px;
+  }
+  .form-row {
+    display: flex;
+    flex-direction:row;
+    /* justify-content: center; */
+   
+  }
+  
+  .form-group {
+  display: flex;
+   margin: 1rem;
+   
+   
+  }
+  .form-group label{
+  
+  font-size: 16px;
+  font-weight: bold;
+  color:black;
+  }
+  .form-group1{
+   
+    margin: 1rem;
+    text-align: center;
+    
+  }
+  .form-group1 label{
+  
+    font-size: 17px;
+    font-weight: bold;
+    color:black;
+    }
+  input{
+  
+     width: auto;
+     height:1.5rem;
+     border-radius: 7px;
+     border-color: rgba(128, 128, 128, 0.397);
+     margin-left: 15px;
+  }
+  .btn-2{
+    align-items: center;
+    justify-content: space-evenly;
+    margin:  2rem;
+    background-color:rgba(0, 0, 0, 0.653) ;
+  }
+ 
+  .main-20{
+    color: black;
+  }
+
+  .input-with-icon {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .input-with-icon input {
+    padding-left: 30px; /* Adjust the padding to leave space for the image */
+    background-image: url('C:\Projects\ReactApp\health-portfolio\public\assets\name-icon.png'); 
+    background-size: 20px; /* Adjust the size of the background image */
+    background-repeat: no-repeat;
+    background-position: right; /* Adjust the position of the image */
+    
+  }
+  .input-with-icon2 input{
+    padding-left: 30px; /* Adjust the padding to leave space for the image */
+    background-image: url('C:\Projects\ReactApp\health-portfolio\public\assets\eamil-2.png'); 
+    background-size: 25px; /* Adjust the size of the background image */
+    background-repeat: no-repeat;
+    background-position: right; /* Adjust the position of the image */
+    
+  }
+  .input-with-icon3 input{
+   
+    background-image: url('C:\Projects\ReactApp\health-portfolio\public\assets\phone-ringing.png'); 
+    background-size: 20px; /* Adjust the size of the background image */
+    background-repeat: no-repeat;
+    background-position: right; /* Adjust the position of the image */
+    padding-right: 20px;
+  }
+  .input-with-icon4 input{
+    padding-left: 30px; /* Adjust the padding to leave space for the image */
+    background-image: url('C:\Projects\ReactApp\health-portfolio\public\assets\location.png'); 
+    background-size: 25px; /* Adjust the size of the background image */
+    background-repeat: no-repeat;
+    background-position: right; /* Adjust the position of the image */
+    
+  }
+  .input-with-icon5 input{
+    padding-left: 20px; /* Adjust the padding to leave space for the image */
+    background-image: url('C:\Projects\ReactApp\health-portfolio\public\assets\message-2.png'); 
+    background-size: 20px; /* Adjust the size of the background image */
+    background-repeat: no-repeat;
+    background-position: right; /* Adjust the position of the image */
+   
+    
+  }
+ 
+
+  @media (max-width: 768px) {
+.main-container-2{
+  flex-direction: column;
+}
+.form-row{
+  flex-direction: column;
+}
+.form-container{
+ padding-top: 50px;
+}
+.form-group{
+  flex-direction: column;
+  margin: 5px;
+}
+  }
+
+
+
+  
